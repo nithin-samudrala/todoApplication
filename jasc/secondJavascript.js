@@ -51,10 +51,14 @@ function createEvent(){
     
 }
 
-window.onbeforeunload = function(event) {
-    event.preventDefault();
-    event.returnValue='';
-};
+// window.onbeforeunload = function(event) {
+//     event.preventDefault();
+//     event.returnValue='';
+// };
+window.addEventListener('beforeunload', function (e) {
+    e.preventDefault(); 
+    e.returnValue = '';
+  });
 
 function removeEvent(){
     
