@@ -1,0 +1,129 @@
+body {
+    background-color: azure;
+}
+#container{
+    width: 350px;
+    /* height: auto; */
+    margin: auto;
+    text-align: center;
+    background: white;
+    height: 800px;
+    overflow-y: auto;
+    color: black;
+    border: 10px solid #d1f7bb;
+    border-radius: 20px;
+}
+#container .controls h1
+{
+    color:  #ee6666;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+
+}
+#container .controls{
+    width: 60%;
+    margin: auto;
+}
+
+#container .controls #input
+{   
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 30px;
+    font-size: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border: 2px solid #94b0da;
+    border-radius: 10px;
+    
+}
+#container .controls #input:focus{
+    outline: 0;
+}
+
+
+#container .controls button{
+    width: 100%;
+    /* border-radius: 10px; */
+    background: white;
+    border: none;
+    height: 30px;
+    margin-top: 3px;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+}
+#container .controls button:focus{
+    outline: 0;
+}
+#container .controls #add{
+    background-color: #276ed8;
+}
+#container .controls #remove{
+    background-color: #f1410b;
+}
+#container .controls #back{
+    background-color: #c2eb30;
+}
+#container  ul{
+    margin-top: 50px;
+    padding-left: 0px;
+}
+#container  ul li{
+    list-style: none;
+    border: 2px solid #f0aaf0;
+    width: 80%;
+    opacity: 0;
+    /* transition: opacity 0.5s ease-in-out; */
+    height: 40px;
+    margin: 5px auto;
+    text-align: left;
+    border-radius: 13px;
+}
+#container  ul li label{
+    /* margin: 10px auto;
+    vertical-align: middle;
+    height: 100%; */
+    line-height: 40px;
+    font-size: 20px;
+}
+#container  ul li #check{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 7px;
+    -webkit-appearance: none;
+    border: 2px solid #b5d8dd;
+    position: relative;
+    outline: 0;
+}
+#container  ul li #check:checked:after{
+    content: '\2714';
+    font-size: 28px;
+    position: absolute;
+    bottom: -3px;
+    left: 1px;
+    color: black;
+}
+#container  ul li input[type='checkbox']:checked + label{
+    text-decoration: line-through;
+    opacity: 50%;
+}
+#container  ul li #check:checked {
+    opacity: 50%;
+}
+#container .controls button:hover
+{
+    transform: scale(1.05);
+}
+#container .mycheck{
+    opacity: 1;
+    border-radius: 10px;
+}
+.visual{
+    opacity: 1 !important;
+    border-radius: 10x;
+}
